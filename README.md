@@ -20,7 +20,7 @@ and now you have to find him. Good luck:)
 - [x] Animate Player
 - [x] add fps counter
 - [ ] render tilemap (still need to fix bug)
-- [ ] world/camera movement
+- [x] world/camera movement
 - [ ] tile collision
 - [ ] falling
 - [ ] enemy and his pixel art
