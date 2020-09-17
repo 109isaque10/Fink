@@ -23,7 +23,13 @@ and now you have to find him. Good luck:)
 - [ ] world/camera movement
 - [ ] tile collision
 - [ ] falling
-- [ ] enemy
+- [ ] enemy and his pixel art
 - [ ] enemy movement
-- [ ] player attacking
-- [ ]
+- [ ] player attacking and his animation
+- [ ] camera
+- [ ] camera movement
+- [ ] optimize camera
+- [ ] pause
+- [ ] add levels
+- [ ] add story
+- [ ] final touches
