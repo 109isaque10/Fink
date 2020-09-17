@@ -1,6 +1,7 @@
 package com.tigames.entity;
 
 import com.tigames.graphics.Sprite;
+import com.tigames.states.PlayState;
 import com.tigames.util.KeyHandler;
 import com.tigames.util.MouseHandler;
 import com.tigames.util.Vector2f;
@@ -36,11 +37,14 @@ public class Player extends Entity {
     public void update(){
         super.update();
         move();
+        PlayState.map.x += dx;
+        PlayState.map.y += dy;
         pos.x += dx;
+        pos.y += dy;
     }
     @Override
     public void render(Graphics2D g) {
-        g.drawImage(ani.getImg(),(int) (pos.x), (int) (pos.y), size, size, null);
+        g.drawImage(ani.getImg(),(int) (pos.getWorldVar().x), (int) (pos.getWorldVar().y), size, size, null);
     }
     public void input(MouseHandler mouse, KeyHandler key) {
         if (mouse.getButton() == 1) {

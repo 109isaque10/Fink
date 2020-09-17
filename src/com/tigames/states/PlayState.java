@@ -22,10 +22,13 @@ public class PlayState extends GameState{
         Vector2f.setWorldVar(map.x, map.y);
         tm = new TileManager("tile/level0.xml");
         font = new Font("font/NewFont.png", 10, 10);
-        ply = new Player(new Sprite("entity/Fink.png"), new Vector2f(500, 500), 64);
+        ply = new Player(new Sprite("entity/Fink.png"), new Vector2f(0 + (GamePanel.width / 2) - 16, 0 + (GamePanel.height / 2) - 16), 64);
     }
     @Override
-    public void update() { ply.update(); }
+    public void update() {
+        Vector2f.setWorldVar(map.x, map.y);
+        ply.update();
+    }
     @Override
     public void input(MouseHandler mouse, KeyHandler key) {
         ply.input(mouse, key);

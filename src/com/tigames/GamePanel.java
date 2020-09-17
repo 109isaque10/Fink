@@ -91,10 +91,7 @@ public class GamePanel extends JPanel implements Runnable{
 			}
 		}
 	}
-	private int x;
-	public void update(){
-		gsm.update();
-	}
+	public void update(){ gsm.update(); }
 	public void input(MouseHandler mouse, KeyHandler key){
 		gsm.input(mouse, key);
 	}
